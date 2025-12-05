@@ -39,4 +39,34 @@ The study analyzes median wage data from the **Hong Kong Census and Statistics D
 4. **Diagnostics**: Heteroskedasticity (BP p<0.001 → HC1 SEs), no multicollinearity (VIF<2) [file:1][file:2]
 
 ## Setup & Reproduction
+Install packages (run once)
+install.packages(c("tidyverse", "lmtest", "car", "sandwich", "stargazer", "ggplot2", "corrplot"))
 
+## Run analysis
+source("HK_Wage_Analysis.R")
+
+
+**Requirements**: R 4.0+, listed packages. Generates PDFs and RDS in working directory. [file:1]
+
+## Results Summary
+
+- **CBD Premium**: 8.08% across industries (robust t=8.67, p<10⁻¹⁰) [file:2]
+- **Industry Effect**: Insignificant (β=0, p=1.0) [file:2]
+- **Inequality**: CBD amplifies spreads by 50% [file:2]
+- **Policy**: Target peripheral talent retention, location-adjusted pay [file:2]
+
+## Authors
+
+- **Alima Nur BEGIMBAEVA** (4072257)
+- **Danil TOMILOV** (4188862)
+
+**Instructor**: CHEN Yiting, ECO4203 Applied Econometrics [file:2]
+
+## License
+
+MIT License - free for academic/research use. Cite original data source. [file:2]
+
+## Citations
+
+1. Hong Kong Census and Statistics Department (2024). *Annual Earnings and Hours Survey*. [file:2]
+2. White, H. (1980). Heteroskedasticity-Consistent Covariance. *Econometrica*. [file:2]
